@@ -11,6 +11,9 @@ const guestCount = document.querySelector(".attendance");
 // alert when guest list is full (not yet visible)
 const guestFull = document.querySelector(".alert");
 
+const assignButton = document.querySelector(".assign");
+const assignedItems = document.querySelector(".assigned-items");
+
 addGuestButton.addEventListener("click", function () {
     const guest = guestInput.value;
     if (guest !== "") {
