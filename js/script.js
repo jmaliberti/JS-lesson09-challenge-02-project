@@ -49,5 +49,5 @@ const assignItems = function () {
     let potluckItems = ["potato salad", "cookies", "3-cheese tomato tart", "pesto pasta salad", 
     "sweet potato fries", "watermelon salad","summer peach and tahini tart", "hummus and pits", 
     "sangria", "non-alcoholic drink mixes", "quinoa salad", "stuffed bell peppers"];
-    
+    let allGuests = document.querySelectorAll(".guest-list");
 };
