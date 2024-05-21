@@ -50,4 +50,7 @@ const assignItems = function () {
     "sweet potato fries", "watermelon salad","summer peach and tahini tart", "hummus and pits", 
     "sangria", "non-alcoholic drink mixes", "quinoa salad", "stuffed bell peppers"];
     let allGuests = document.querySelectorAll(".guest-list");
+    for (let guest of allGuests) {
+        let randomPotluckIndex = Math.floor(Math.random() * potluckItems.length)
+    };
 };
