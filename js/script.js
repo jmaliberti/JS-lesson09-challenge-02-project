@@ -59,8 +59,9 @@ const assignItems = function () {
 //You’re using guest.innerText to access the name inside the li element. 
 //If you used guest without innerText, you’d grab the actual list element instead of the text.
         assignItems.append(listItem);
-        assignButton.addEventListener("click", function () {
-            assignItems();
-        });
         };        
 };
+
+assignButton.addEventListener("click", function () {
+    assignItems();
+});
