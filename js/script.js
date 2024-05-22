@@ -51,6 +51,16 @@ const assignItems = function () {
     "sangria", "non-alcoholic drink mixes", "quinoa salad", "stuffed bell peppers"];
     let allGuests = document.querySelectorAll(".guest-list");
     for (let guest of allGuests) {
-        let randomPotluckIndex = Math.floor(Math.random() * potluckItems.length)
-    };
+        let randomPotluckIndex = Math.floor(Math.random() * potluckItems.length);
+        let randomPotluckItem = potluckItems(randomPotluckIndex);
+        //^^add the item from the potluckItems array at the index position of randomPotluckIndex
+        let listItem = document.createElement("li");
+            listItem.innerText = `${guest.innerText} is bringing ${randomPotluckItem}.`;
+//You’re using guest.innerText to access the name inside the li element. 
+//If you used guest without innerText, you’d grab the actual list element instead of the text.
+        assignItems.append(listItem);
+        assignButton.addEventListener("click", function () {
+            assignItems();
+        });
+        };        
 };
