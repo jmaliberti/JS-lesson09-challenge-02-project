@@ -52,7 +52,7 @@ const assignItems = function () {
     const allGuests = document.querySelectorAll(".guest-list li");
     for (let guest of allGuests) {
         let randomPotluckIndex = Math.floor(Math.random() * potluckItems.length);
-        let randomPotluckItem = potluckItems(randomPotluckIndex);
+        let randomPotluckItem = potluckItems[randomPotluckIndex];
         //^^add the item from the potluckItems array at the index position of randomPotluckIndex
         let listItem = document.createElement("li");
             listItem.innerText = `${guest.innerText} is bringing ${randomPotluckItem}.`;
