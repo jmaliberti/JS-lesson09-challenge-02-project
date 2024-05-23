@@ -47,9 +47,10 @@ const updateGuestCount = function () {
 
 const assignItems = function () {
     let potluckItems = ["potato salad", "cookies", "3-cheese tomato tart", "pesto pasta salad", 
-    "sweet potato fries", "watermelon salad","summer peach and tahini tart", "hummus and pits", 
+    "sweet potato fries", "watermelon salad","summer peach and tahini tart", "hummus and pita", 
     "sangria", "non-alcoholic drink mixes", "quinoa salad", "stuffed bell peppers"];
     const allGuests = document.querySelectorAll(".guest-list li");
+    
     for (let guest of allGuests) {
         let randomPotluckIndex = Math.floor(Math.random() * potluckItems.length);
         let randomPotluckItem = potluckItems[randomPotluckIndex];
@@ -59,6 +60,7 @@ const assignItems = function () {
 //You’re using guest.innerText to access the name inside the li element. 
 //If you used guest without innerText, you’d grab the actual list element instead of the text.
         assignedItems.append(listItem);
+        potluckItems.splice(randomPotluckIndex, 1)
         };        
 };
 
