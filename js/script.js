@@ -58,7 +58,7 @@ const assignItems = function () {
             listItem.innerText = `${guest.innerText} is bringing ${randomPotluckItem}.`;
 //You’re using guest.innerText to access the name inside the li element. 
 //If you used guest without innerText, you’d grab the actual list element instead of the text.
-        assignItems.append(listItem);
+        assignedItems.append(listItem);
         };        
 };
 
