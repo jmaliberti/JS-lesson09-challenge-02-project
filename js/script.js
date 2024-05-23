@@ -66,5 +66,5 @@ const assignItems = function () {
 
 assignButton.addEventListener("click", function () {
     assignItems();
-
+    assignButton.disabled = true;
 });
